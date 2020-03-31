@@ -1,0 +1,12 @@
+.naslov{
+	background: url(2-nature.jpg) no-repeat 5% #2ea3f2 scroll;
+	color: #FFF;
+	width: 90vw;
+	height: 90vh;
+	background-size: 100%;
+	border: 4px #000000;
+	background-clip: padding-box;
+	
+	
+	
+}
