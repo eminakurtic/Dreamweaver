@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forme</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<form action="process.php" method="POST">
+		
+<fieldset>
+	
+	<legend>Registration form</legend>
+		<label for="username">Username: </label>
+		<input type="text" name="username" placeholder="Unesi svoj username" value="" required maxlength="20">
+		
+		<br><br>
+		
+		<label for="password">Password: </label>
+		<input type="text" name="password" placeholder="Unesi svoj password" required>
+		
+		<br><br>
+		
+	  <textarea name="biography" placeholder="Unesi svoj biografiju"></textarea>
+		
+		<br><br>
+		
+		<label for="gender">Odaberi spol:</label>
+		<span>Muško</span>
+		<input type="radio" name="gender" value="male">
+		<span>Žensko</span>
+		<input type="radio" name="gender" value="female">
+		<span>Drugo</span>
+		<input type="radio" name="gender" value="other">
+		
+		<br><br>
+		
+		<label for="privacy">Slažem se uslovima poslovanja:</label>
+		<input type="checkbox" name="privacy">
+		
+		<br><br>
+		
+		<label for="color">Odaberi svoju boju:</label>
+		<input type="color" name="color">
+		
+		<br><br>
+		
+		<input type="file" name="file[]">
+		
+		<br><br>
+		
+		<input type="reset">
+		<input type="submit" value="Please register">
+		
+</fieldset>
+		
+</form>
+</body>
+</html>
