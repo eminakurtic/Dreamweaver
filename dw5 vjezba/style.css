@@ -1,0 +1,15 @@
+.vjezba p:first-child{
+	color: red;
+}
+
+.vjezba p:last-child{
+	color: blue;
+}
+
+.vjezba p:nth-child(4n){
+	color: green;
+}
+
+.vjezba p:nth-child(even):hover{
+	color: purple;
+}

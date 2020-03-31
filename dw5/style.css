@@ -1,0 +1,60 @@
+.prva-forma input[type="text"]{
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 5px;
+	border: none;
+	background: #444;
+	color: #fff;
+	transition: 250ms ease-in-out all;
+}
+
+.prva-forma input[type="text"]:hover{
+	transform: scale(1.03);
+}
+
+.prva-forma input[type="text"]:focus{
+	transform: scale(1.03);
+	border-bottom: 2px solid #444;
+	background: #fff;
+	color: #444;
+	outline: none;
+}
+
+p{
+	background: #B91AAA;
+	color: #FFF;
+	padding: 5px;
+}
+
+p:not(.paragraf){
+	background: #13E47F;
+}
+
+p:empty{
+	width: 100px;
+	height: 100px;
+}
+
+.paragrafi p:first-child{
+	border: 1px solid #333;
+}
+
+.paragrafi p:last-child{
+	border: 1px dashed #666;
+}
+
+.paragrafi p:nth-child(2){
+	border: 1px dotted #aaa;
+}
+
+.paragrafi p:nth-child(even)::before{
+	content: "A: ";
+}
+
+.paragrafi p:nth-child(odd)::before{
+	content: "B: ";
+}
+
+.paragrafi p:first-of-type{
+	padding-left: 50px;
+}
