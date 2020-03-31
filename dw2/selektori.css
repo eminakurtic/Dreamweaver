@@ -1,0 +1,51 @@
+/*Nasljedni selektor*/
+ul li{
+	color: red;
+}
+
+/*Dijete (direktni potomak) selektor */
+ul > li{
+	color: blue;
+}
+
+/*Neposredni srodnik - element koji dolazi odmah poslije prvog elementa */
+p+ul{
+	background: rgba(0,0,0,0.3);
+}
+
+
+/* Generalni srodnik - Element u istoj liniji, ali moze imati druge elemente prije njega (izmedu njih) */
+p ~ p{
+	font-weight: bold;
+}
+
+/*Selektor atributa */
+
+/*Element koji ima atribut data-naziv */
+p[data-naziv]{
+	color: green;
+}
+
+/*Bilo koji element koji ima atribut data-naziv */
+[data-naziv]{
+	font-size: 1.3em;
+}
+
+/*Bilo koji element koji ima atribut data-naziv i vrijednost tog atributa "prvi-paragraf" */
+[data-naziv="prvi-paragraf"]{
+	text-align: center;
+}
+
+/*Element koji ima atribut data-lista i negdje unutar vrijednosti tog atributa rijec "lista" + njegovi direktni li potomci */
+[data-lista*="lista"] > li{
+	font-style: italic;
+}
+
+/*Gadamo svaki a element koji sadrzi href atribut, a cija vrijednost pocinje "http://" */
+a[href^="https://"]{
+	color: red;
+}
+
+
+
+	
